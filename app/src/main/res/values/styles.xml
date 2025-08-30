@@ -1,15 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <!--
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-
     -->
-    <style name="AppBaseTheme" parent="android:Theme" />
+    <style name="AppBaseTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Modern Material Design 3 theme -->
+        <item name="colorPrimary">@android:color/system_accent1_600</item>
+        <item name="colorOnPrimary">@android:color/system_accent1_0</item>
+        <item name="colorPrimaryContainer">@android:color/system_accent1_200</item>
+        <item name="colorOnPrimaryContainer">@android:color/system_accent1_900</item>
+        <item name="colorSecondary">@android:color/system_accent2_600</item>
+        <item name="colorOnSecondary">@android:color/system_accent2_0</item>
+        <item name="colorSecondaryContainer">@android:color/system_accent2_100</item>
+        <item name="colorOnSecondaryContainer">@android:color/system_accent2_900</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- Modern Card Styles -->
+    <style name="ModernCardStyle" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">8dp</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <style name="StatusCardStyle" parent="Widget.Material3.CardView.Filled">
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardElevation">12dp</item>
+        <item name="android:layout_marginHorizontal">24dp</item>
+        <item name="android:layout_marginVertical">16dp</item>
+    </style>
+
+    <!-- Modern Button Styles -->
+    <style name="ModernButton" parent="Widget.Material3.Button.ElevatedButton">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_marginHorizontal">24dp</item>
+        <item name="android:layout_marginVertical">8dp</item>
+        <item name="cornerRadius">28dp</item>
+    </style>
+
+    <style name="StartButton" parent="ModernButton">
+        <item name="backgroundTint">@color/status_running</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="StopButton" parent="ModernButton">
+        <item name="backgroundTint">@color/status_stopped</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Device List Item Style -->
+    <style name="DeviceItemStyle" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:minHeight">72dp</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="TitleText" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textColor">@color/text_primary_light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SubtitleText" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/text_secondary_light</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="StatusText" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary_light</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DeviceNameText" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/text_primary_light</item>
+        <item name="fontWeight">500</item>
+    </style>
+
+    <style name="DeviceInfoText" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/text_secondary_light</item>
     </style>
 </resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors -->
+    <color name="primary_color">#6200EA</color>
+    <color name="primary_light">#9D46FF</color>
+    <color name="primary_dark">#0A00B6</color>
+    <color name="accent_color">#03DAC6</color>
+
+    <!-- Status Colors -->
+    <color name="status_running">#4CAF50</color>
+    <color name="status_stopped">#F44336</color>
+    <color name="status_warning">#FF9800</color>
+    <color name="status_unknown">#9E9E9E</color>
+
+    <!-- Background Colors -->
+    <color name="background_light">#F8F9FA</color>
+    <color name="background_dark">#121212</color>
+
+    <!-- Legacy Gradient Colors (can remove later) -->
+    <color name="gradient_start">#667EEA</color>
+    <color name="gradient_end">#764BA2</color>
+    <color name="gradient_start_dark">#2C3E50</color>
+    <color name="gradient_end_dark">#34495E</color>
+
+    <!-- Card Backgrounds -->
+    <color name="card_background_light">#FFFFFF</color>
+    <color name="card_background_dark">#1E1E1E</color>
+    <color name="status_card_running">#E8F5E8</color>
+    <color name="status_card_stopped">#FFEBEE</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary_light">#212121</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_secondary_light">#757575</color>
+    <color name="text_secondary_dark">#B3B3B3</color>
+
+    <!-- Device Type Colors -->
+    <color name="device_storage">#2196F3</color>
+    <color name="device_input">#FF5722</color>
+    <color name="device_hid">#9C27B0</color>
+    <color name="device_communication">#4CAF50</color>
+    <color name="device_unknown">#9E9E9E</color>
+
+    <!-- State Colors -->
+    <color name="connected_green">#4CAF50</color>
+    <color name="disconnected_red">#F44336</color>
+    <color name="loading_yellow">#FFC107</color>
+    <color name="error_orange">#FF9800</color>
+</resources>

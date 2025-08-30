@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Device List Item Layout -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" android:clickable="true" android:focusable="true" android:minHeight="72dp" android:background="@color/card_background_dark" android:elevation="4dp">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:orientation="horizontal" android:gravity="center_vertical">
+
+        <!-- Device Icon -->
+        <ImageView android:id="@+id/deviceIcon" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginEnd="16dp" android:src="@android:drawable/ic_menu_gallery" android:tint="@color/device_unknown" />
+
+        <!-- Device Details -->
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+
+            <TextView android:id="@+id/deviceName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:textSize="16sp" android:textStyle="bold" android:text="USB Device Name" />
+
+            <TextView android:id="@+id/deviceInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textColor="#FFFFFF" android:textSize="14sp" android:text="Vendor ID: XXXX, Product ID: XXXX" />
+
+        </LinearLayout>
+
+        <!-- Connection Status -->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center">
+
+            <TextView android:id="@+id/deviceStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:text="@string/device_connected" android:textSize="12sp" android:textStyle="bold" />
+
+            <View android:id="@+id/statusIndicator" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginTop="4dp" android:background="@drawable/shape_circle" android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

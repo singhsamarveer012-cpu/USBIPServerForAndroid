@@ -3,5 +3,19 @@
     <string name="app_name">USB/IP Server</string>
     <string name="service_name">USB/IP Server Service</string>
 
-    <string name="ready_text">Claim a USB device from your USB/IP client to get started!</string>
+    <!-- UI Strings -->
+    <string name="ready_text">Ready to share USB devices over IP</string>
+    <string name="server_running">Server Running</string>
+    <string name="server_stopped">Server Stopped</string>
+    <string name="start_service">Start Server</string>
+    <string name="stop_service">Stop Server</string>
+    <string name="connected_devices_title">Connected Devices</string>
+    <string name="no_devices_connected">No devices connected</string>
+    <string name="device_connected">Connected</string>
+    <string name="device_not_connected">Not Connected</string>
+    <string name="refresh_devices">Refresh</string>
+    <string name="devices_connected">Devices Connected</string>
+    <string name="server_info">Server Info</string>
+    <string name="port_info">Port: 3240</string>
+    <string name="status_info">Status</string>
 </resources>

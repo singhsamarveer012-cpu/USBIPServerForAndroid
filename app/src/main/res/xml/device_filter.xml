@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- USB Device Filter for USB/IP Server - All USB devices -->
+<resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!-- Accept all USB devices -->
+    <usb-device vendor-id="*" />
+</resources>
